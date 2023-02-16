@@ -1,0 +1,377 @@
+#wrapper {
+    padding:40px 20px;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0px auto;
+}
+
+#header {
+    text-align: center;
+    margin:0px auto;
+}
+
+/*Logo slika*/
+#header img {
+    width: 60%;
+}
+
+#container {
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    min-height:20vh;
+}
+
+.box-container {
+    padding: 30px;
+}
+
+.box h1 span {
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ff006a;
+}
+
+.box:first-child img {
+    width: 95%;
+}
+
+/*Terminal - konzola*/
+.box:nth-child(2) {
+    background-size: cover;
+    width: 95%;
+    min-height: 40vh;
+    /* background:url(textbox.png); */
+    background-repeat: no-repeat;
+    border: 3px solid #C30052;
+    background:url(trans.png)
+}
+
+/*Header Terminala - konzola*/
+.box:nth-child(2) .header {
+    background: #C30052;
+    height:35px;
+    font-weight: bold;
+    font-family: 'SF Pixelate', sans-serif; 
+    font-size: 1.6rem;
+    padding:10px;
+    color:#000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Ikonice Terminala*/
+.box:nth-child(2) .header .ikonice{
+    width: 10%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Ikonice Terminala*/
+.box:nth-child(2) .header .ikonice div:hover{
+    color: #00C16A;
+    transition: 0.3s ease;
+}
+
+#navbar {
+    background-color: #000000;
+    /* background-image: url("textbox.png"); */
+    background-repeat: no-repeat;
+}
+
+
+body {
+    background-image:url("bg.png");
+}
+
+a {
+    text-decoration:none;
+}
+	
+a:link {
+	color:#C30052;
+}
+	
+a:visited {
+	color:#C30052;
+}
+	
+a:hover {
+	color:#00C16A;
+	animation: eggB2 1s ease-out infinite;
+}
+	
+a:active {
+	color:#C30052;
+}
+
+.anim {
+    animation: idkB 2s ease-in-out infinite;
+}
+
+.ascii-pc {
+    font-size: 2rem;
+    white-space: pre;
+    color: #00C16A;
+    font-weight: bold;;
+    font-family: Arial, Helvetica, sans-serif;                                                       
+}
+
+.about_me {
+    margin-top: 20px;
+    color:#EDC14D;
+    font-size: 2rem;
+    font-family: 'SF Pixelate', sans-serif;   
+                           
+}
+
+.about_me h2 {
+    text-align: center;
+
+}
+
+/*Responsive*/
+@media screen and (max-width: 1280px) {
+    #container {
+        padding:20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box:first-child {
+        margin-bottom: 30px;
+    }
+
+    .ascii-pc {
+        font-size: 1.4rem;
+        white-space: pre;
+        color: #00C16A;
+        font-weight: bold;;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.del1s {
+    animation: blink 2s linear infinite;
+    animation-delay: 0s;
+    letter-spacing:0px
+    
+    }	
+    
+.del1s5ms {
+    animation: blink 2s linear infinite;
+    animation-delay: 0.4s;
+    letter-spacing:0px
+    
+    }	
+    
+.del2s {
+    animation: blink 2s linear infinite;
+    animation-delay: 0.8s;
+    letter-spacing:0px
+    
+    }
+    
+    
+.del4s {
+    animation: blink 2s linear infinite;
+    animation-delay: 1.2s;
+    letter-spacing:0px
+    
+    }	
+    
+.del5s {
+    animation: blink 2s linear infinite;
+    animation-delay: 1.6s;
+    letter-spacing:0px
+    
+    }	
+
+.del6s {
+    animation: blink 2s linear infinite;
+    animation-delay: 2s;
+    letter-spacing:0px
+    
+    }	
+
+.blink {
+  animation: blink 2s linear infinite;
+}
+
+.Bfast {
+      animation: blink 2s ease-out infinite;
+    }
+    
+.anim {
+          animation: idkB 2s ease-in-out infinite;
+    }
+    
+.wdel1s {
+    animation: idkB 2s ease-in-out infinite;
+    animation-delay: 0.4s;	
+    }
+    
+.wdel2s {
+    animation: idkB 2s ease-in-out infinite;
+    animation-delay: 0.8s;	
+    }
+    
+.wdel3s {
+    animation: idkB 2s ease-in-out infinite;
+    animation-delay: 1.2s;	
+    }
+    
+@keyframes blink {
+  50% {
+      color:black;
+  }
+ }
+ 
+ @keyframes idkB {
+  50% {
+      color:#ff006a;
+      text-shadow:#ff006a 1px 4px 5px;
+      }
+ }
+ 
+ @keyframes eggB2 {
+  50% {
+      color:#ff006a;
+      text-shadow:#ff006a 1px 1px 6px;
+      }
+ }
+
+/* 
+h1 {
+	font-size:40px;
+    font-family: 'DEC Terminal Modern', sans-serif;                                                                          
+	font-weight:normal;
+	clear:both;
+    
+	}
+	
+    .del1s {
+        animation: blink 2s linear infinite;
+        animation-delay: 0s;
+        letter-spacing:0px
+        
+        }	
+        
+    .del1s5ms {
+        animation: blink 2s linear infinite;
+        animation-delay: 0.4s;
+        letter-spacing:0px
+        
+        }	
+        
+    .del2s {
+        animation: blink 2s linear infinite;
+        animation-delay: 0.8s;
+        letter-spacing:0px
+        
+        }
+        
+        
+    .del4s {
+        animation: blink 2s linear infinite;
+        animation-delay: 1.2s;
+        letter-spacing:0px
+        
+        }	
+        
+    .del5s {
+        animation: blink 2s linear infinite;
+        animation-delay: 1.6s;
+        letter-spacing:0px
+        
+        }	
+    
+    .del6s {
+        animation: blink 2s linear infinite;
+        animation-delay: 2s;
+        letter-spacing:0px
+        
+        }	
+    
+    .blink {
+      animation: blink 2s linear infinite;
+    }
+    
+    .Bfast {
+          animation: blink 2s ease-out infinite;
+    
+        }
+        
+    anim {
+              animation: idkB 2s ease-in-out infinite;
+        }
+        
+    .wdel1s {
+        animation: idkB 2s ease-in-out infinite;
+        animation-delay: 0.4s;	
+        }
+        
+    .wdel2s {
+        animation: idkB 2s ease-in-out infinite;
+        animation-delay: 0.8s;	
+        }
+        
+    .wdel3s {
+        animation: idkB 2s ease-in-out infinite;
+        animation-delay: 1.2s;	
+        }
+        
+    @keyframes blink {
+      50% {
+          color:black;
+      }
+     }
+     
+     @keyframes idkB {
+      50% {
+          color:#C30052;
+          text-shadow:#ff006a 1px 4px 5px;
+          }
+     }
+     
+     @keyframes eggB2 {
+      50% {
+          color:#C30052;
+          text-shadow:#ff006a 1px 1px 6px;
+          }
+     }
+
+     #navline {
+        font-size:13px;
+        letter-spacing:8px;
+        margin-bottom:10px;
+        
+        }
+        
+    .navline {
+        font-size:8px;
+        letter-spacing:8px;
+        margin-bottom:20px;
+        
+        }
+
+#enterZone {
+    display:block;
+    background-image:url(adelpic.gif);
+    width: 800px;
+    height:800px;
+    margin-left:40px;
+    margin-right:auto;
+    margin-top:40px;
+    } */
+.music {
+    display: none;
+}
