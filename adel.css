@@ -141,7 +141,7 @@ a:active {
 /*Responsive*/
 @media screen and (max-width: 1280px) {
     #container {
-        padding:20px;
+        padding:3px;
         display: flex;
         flex-direction: column;
     }
@@ -151,7 +151,7 @@ a:active {
     }
 
     .ascii-pc {
-        font-size: 1.4rem;
+        font-size: 1rem;
         white-space: pre;
         display:flex;
         color: #00C16A;
@@ -164,6 +164,13 @@ a:active {
         justify-content:space-between;
         display: flex;
         flex-direction: row;
+    }
+    .about_me  h2 {
+        display:flex;
+        font-size: 1.6rem;
+    }
+    .about_me {
+        font-size: 1.5rem;
     }
 }
 
@@ -257,6 +264,9 @@ a:active {
       }
  }
 
+ .music {
+    display: none;
+}
 /* 
 h1 {
 	font-size:40px;
@@ -380,6 +390,3 @@ h1 {
     margin-right:auto;
     margin-top:40px;
     } */
-.music {
-    display: none;
-}
