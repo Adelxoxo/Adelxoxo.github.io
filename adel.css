@@ -151,7 +151,7 @@ a:active {
     }
 
     .ascii-pc {
-        font-size: 1rem;
+        font-size: 0.7rem;
         white-space: pre;
         display:flex;
         color: #00C16A;
@@ -167,10 +167,10 @@ a:active {
     }
     .about_me  h2 {
         display:flex;
-        font-size: 1.6rem;
+        font-size: 0.96rem;
     }
     .about_me {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
