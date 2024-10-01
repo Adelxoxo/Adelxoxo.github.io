@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'AdelleSansEXTLightItalic';
-    src: url('../Adelv2/fonts/AdelleSansEXT-LightItalic.ttf') format('truetype');
+    src: url('../fonts/AdelleSansEXT-LightItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'AdelleSansEXTBold';
-    src: url('../Adelv2/fonts/AdelleSansEXT-Bold.ttf') format('truetype');
+    src: url('../fonts/AdelleSansEXT-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AdelleSansEXTRegular';
-    src: url('../Adelv2/fonts/AdelleSansEXT-Regular.ttf') format('truetype');
+    src: url('../fonts/AdelleSansEXT-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -217,9 +217,8 @@ form button {
     border-radius: 10px;
 }
 
-/* Footer */
 footer {
-    font-family: AdelleSansEXTBold;
+    font-family: 'AdelleSansEXTBold';
     background-color: rgba(0, 0, 0, 0.8);
     color: #c3005D;
     text-align: center;
