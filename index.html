@@ -1,56 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="adel.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/dec-terminal-modern" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutAdel</title>
-    <style>
-        @import url('https://fonts.cdnfonts.com/css/dec-terminal-modern');
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Taktičke Igre - Adelov Sajt</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body data-game="tactical">
+    <div class="background"></div>
+
 <body>
-    <div id="wrapper" class="animate__animated animate__fadeIn animate__delay-1s">
-        <!--Ovdje je Heading / Logo-->
-        <div id="header">
-            <a href="adel.html"><img src="logo.gif" alt="Adel"></a>
+    <div class="navbar">
+        <a href="index.html">TAKTIČKE</a>
+        <a href="lookingforward.html">ČEKAONICA</a>
+        <a href="aboutme.html">O MENI</a>
+    </div>
+
+
+    <div class="container">
+        <div class="game-section">
+            <img src="../Adelv2/media/images/logos/milsimbanner.png">
+            <h1>Taktičke Igre</h1>
         </div>
-            <!-- <div class="box">
-                <h1>
-                    <span class="anim">>>>ADEL<<<</span>
-                    <span class="wdel1s"> >>KOBIĆ<<</span>
-                </h1> -->
-                <div class="box animate__animated animate__lightSpeedInRight animate__delay-1s">
-                    <div class="header">
-                        <div>
-                            <i class="fa-solid fa-terminal" style="margin-right:15px"></i>
-                            Home_page.exe
-                        </div>
-                        <div class="ikonice">
-                            <div>
-                                🗕
-                            </div>
-                            <div>
-                                🗖
-                            </div>
-                            <div>
-                                ✖
-                            </div>
-                        </div>
+
+
+        <div class="content">
+            <!-- ArmA -->
+            <article>
+                <h2>ArmA</h2>
+                <p>ArmA je taktička i vojna simulacijska franšiza češkog developera Bohemia Interactive. Poznata je po svom realističnom prikazu ratovanja i nevjerovatno prostranom igrivom terenu koji 1:1 reproducira reljefe hrvatskog Krka, grčkih ostrva Limnos, Ajos Efstratios, Lefkada, fiđijskog ostrva Ovalau, kao i prostranih čeških livada i šuma u Bohemiji i Moravskoj.</p>
+                <p>Naravno, scenariji za sve igre su fiktivni ali nipošto nemogući i odvojeni od stvarnosti, činjenica koja posebno ranjava u kampanjama Arme 2 i 3 uz vjerodostojnim prikazima, nažalost, nerijetkih stvarnih pojava poput ratnih zločina, vrijeđanja međunarodnih ljudskih prava i kršenja zakona ratovanja. Važno je naglasiti veliku ulogu koju cijela franšiza, a posebno ArmA 3 igra u obrazovanju šire populacije igrača o ovim temama kroz plaćene i besplatne DLC-ove, kao i dobrotvornim donacijama humanitarnim organizacijama.</p>
+                <p>Bohemia Interactive je zbog svoje odanosti realizmu jedan od rijetkih developera čija su dvojica zaposlenika lišeni slobode povodom fotografisanja grčkih vojnih baza kao reference za mapu Arme III, pri čemu su pušteni na slobodu nakon nekoliko mjeseci zahvaljujući intervenciji vlade Republike Češke.</p>
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="changeImage('arma', -1)">&#10094;</button>
+                    <div class="carousel-images" id="arma">
+                        <figure>
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/2410074981501713467/6826E6ED2B630B53C7EC9DC05DA4CF1D3A5AD09C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="ArmA">
+                            <figcaption>ArmA Reforger, Bohemia Interactive</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/arma3.png" alt="Arma 3 Screenshot">
+                            <figcaption>Arma 3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/1637577612158916103/39463DCCB91A7DD9E875E97A0860AC99DF793E07/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Arma 2 AO Screenshot">
+                            <figcaption>Arma 2: Operation Arrowhead</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/OFP.jpg" alt="Operation Flashpoint: Cold War Crisis, the first entry of the ArmA series.">
+                            <figcaption>Operation Flashpoint: Cold War Crisis, prva igra koja je zasnovala ArmA franšizu.</figcaption>
+                        </figure>
                     </div>
-                    <div class="box-container">
-                        <span class="anim ascii-pc">
-CLICK THE LOGO!!!!
-                           </span>
-            </div>
+                    <button class="carousel-button next" onclick="changeImage('arma', 1)">&#10095;</button>
+                </div>
+            </article>
+
+            <!-- DayZ -->
+            <article>
+                <h2>DayZ</h2>
+
+                <p>Kasnih 2000.-tih novozelanđanin Dean Hall, tadašnji vojnik, tokom solističke vježbe preživljavanja na napuštenom pacifičkom ostrvu začuo je zvono smrti. Nasreću je skoro evakuisan u teško oboljelom stanju. Kasnije napušta vojsku i preobrazuje se na modding za Armu 2.</p>
+<p>Iz njegovog nezaboravnog iskustva, 2012. niče DayZ Mod koji zaprima svjetsku slavu kao najstrašnija i najbolja postapokaliptična zombie-survival igra ikad, te inspiriše stotine drugih igara poput Rust, The Isle, Scum, Unturned i sl.</p>
+<p>Bohemia Interactive, uvidjevši doprinos moda na prodaju Arme 2, iste godine zapošljava Deana Halla za rad na samostalnoj verziji DayZ-a. Uz teških 5 godina u Early Access fazi razvoja i odlazak Halla, DayZ konačno izbija kao gotova igra 2018.-te.</p>
+<p>Kako je sama priča o nastanku igre nevjerovatna, tako su i doživljaji igrača u njoj. Sa velikim fokusom na realizam i nevjerovatnim detaljima složenih sistema obolijevanja, liječenja, ranjavanja, zemljoradnje, pecanja, gradnje, pripreme hrane, rukovanja i održavanja oružja, te lova i ribolova, kao i psihosocijalni faktor preživljavanja u surovoj, zombijima zaraženoj zemlji, nudi igračima najpogodnije tlo za stvaranje sopstvene priče kroz zajednička iskušenja. </p>
+<p>DayZ je igra koja spaja ljude i istovremeno podvrguje ih teškim izborima, život je borba a opstanak nije zagarantovan. Smrt sa sobom nosi gubitak svega stečenog. No bez obzira na sve teškoće, DayZ nudi nešto što nijedna druga igra nema - stvarne doživljaje stečene u nestvarnoj okolini, tzv.  "DayZ priče", iskustva koja se doživotno pamte.</p>
+
+                
+                <div class="carousel">
+                    <button class="carousel-button prev" onclick="changeImage('dayz', -1)">&#10094;</button>
+                    <div class="carousel-images" id="dayz">
+                        <figure>
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/2446089105229435682/2C8234467EDD425F699F4A1773B3AD1AB01AF7D4/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="DayZ Image 1">
+                            <figcaption>DayZ (Standalone), Bohemia Interactive</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/2446089105229435085/3428BBD1596950AD56E390D23B0589932A40FE2F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="DayZ Image 2">
+                            <figcaption>DayZ (Standalone), Bohemia Interactive</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://steamuserimages-a.akamaihd.net/ugc/548680779276063901/57BDBA9B590FEA9E34DDA2B405B92448F9583AD4/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="DayZ Image 3">
+                            <figcaption>DayZ: Arma 2 Mod, Dean Hall</figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-button next" onclick="changeImage('dayz', 1)">&#10095;</button>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rPqSkrb88CQ?si=hFUX83OWMVgxy1-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+
+            <!-- Escape From Tarkov -->
+            <article>
+                <h2>Escape From Tarkov</h2>
+                <p>Tarkov je još jedna u nizu sado-mazo igara koje zadovoljavaju slavensku potrebu za patnjom i boli. Ubrzo shvatiš da je nebo sivo, život crn a novčanik prazan i da moraš vršiti raciju s dva metka u tatinom tetejcu koji ti je povjerio da bi skratio muke njemu i sebi. Kao i ostale igre na ovoj listi, Tarkov se ponosi realističnim prikazom, rukovanjem i modifikovanjem oružja.</p>
+                <p>Igra je također obogaćena raznim mehanikama tipičnije viđene u MMO-ovima poput: levelovanja vještina, tržište podržano mikro- & makroekonomijom s raznolikim izvorima prihoda (itemi, questovi, crafting, NPC trader shopovi, bitcoin mining, buvljak, sve osim player-player trampe zbog uloge kritičnih quest itema).</p>
+                <p>Sve u svemu, ruski developer BSG je uspio da zarobi čitavu moju ekipu u granicama neizbježivog tarkovskog rajona već mjesecima. P.S.: EFT kao medijska franšiza posjeduje jedan od najintenzivnijih kratkih serijala smještenih u fiktivnom univerzumu, sasvim besplatno pogledajte "RAID" na BSG-ovim zvaničim portalima.</p>
+                <div class="carousel"> 
+                <button class="carousel-button prev" onclick="changeImage('tarkov', -1)">&#10094;</button>
+                <div class="carousel-images" id="tarkov">
+                        <figure>
+                            <img src="../Adelv2/media/images/other/tarkov1.png" alt="Tarkov Image 1">
+                            <figcaption>Escape From Tarkov, BattleState Games</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/tarkov2.png" alt="Tarkov Image 2">
+                            <figcaption>Escape From Tarkov, puni queue</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/tarkov3.png" alt="Tarkov Image 3">
+                            <figcaption>Escape From Tarkov</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/tarkov4.png" alt="Tarkov Image 4">
+                            <figcaption>Tarkovski buvljak</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../Adelv2/media/images/other/tarkov5.png" alt="Tarkov Image 5">
+                            <figcaption>EFT, Modifikacija oružja</figcaption>
+                        </figure>
+                    </div>   
+                        <button class="carousel-button next" onclick="changeImage('tarkov', 1)">&#10095;</button>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Jlyhs7yOLY?si=RbV-CsmWNHlICSBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+
+            <aside>
+                <h3>Preporučene taktičke FPS igre</h3>
+                <ul>
+                    <li>Squad</li>
+                    <li>Hell Let Loose</li>
+                    <li>Day of Infamy</li>
+                    <li>Insurgency: Sandstorm</li>
+                </ul>
+            </aside>
+
+            <section>
+                <h3>Izdvojena recenzija:</h3>
+                <article>
+                    <h4>m0nk, putem Steama:</h4>
+                    <p>"There is no experience quite like DayZ. Gameplay varies significantly depending on whether you play on official, vanilla, or modded community servers. If you seek an immersive post-apocalyptic survival experience, DayZ delivers a first-hand taste of struggle, fear, and anxiety."</p>
+                </article>
+            </section>
         </div>
     </div>
+
+    <footer>
+        <p>Adel Kobic MMXXIV</p>
+    </footer>
+    <script src="carousel.js"></script>
+    <script src="background.js"></script>
+    <audio autoplay>
+        <source src="tactical_theme.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
-
-
-
